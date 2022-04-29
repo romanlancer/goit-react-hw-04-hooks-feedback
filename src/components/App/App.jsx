@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
 import { Component } from 'react';
+import { Wrapper } from './App.styled';
+import Logo from '../Logo';
 import Section from '../Section';
 import Statistics from '../Statistics';
 import FeedbackOptions from '../FeedbackOptions';
@@ -40,14 +40,14 @@ class App extends Component {
 
     return (
       <Wrapper>
-        <Section title="Please, leave feedback">
+        <Logo />
+        <Section title="Please leave feedback">
           <FeedbackOptions
             options={names}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>
-
-        <Section title="Statistic">
+        <Section title="Statistics">
           {this.countTotalFeedback() ? (
             <Statistics
               good={good}
@@ -64,8 +64,5 @@ class App extends Component {
     );
   }
 }
-const Wrapper = styled.main`
-  padding: 15px;
-`;
 
 export default App;
