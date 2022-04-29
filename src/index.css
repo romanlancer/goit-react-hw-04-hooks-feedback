@@ -18,7 +18,7 @@ button {
 }
 
 body {
-  background-image: url(https://www.roosterbrother.com/wp-content/uploads/2017/06/coffee-background-top-1.jpg);
+  background-image: url(./coffee-background-top-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
