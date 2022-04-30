@@ -17,22 +17,22 @@ export const FeedbackButton = styled.button`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:nth-child(1):hover,
-  &:nth-child(1):focus {
+  &:nth-of-type(1):hover,
+  &:nth-of-type(1):focus {
     transform: scale(1.1);
     background-color: #66df4edc;
     color: #fff;
   }
 
-  &:nth-child(2):hover,
-  &:nth-child(2):focus {
+  &:nth-of-type(2):hover,
+  &:nth-of-type(2):focus {
     transform: scale(1.1);
     background-color: #93a790dc;
     color: #fff;
   }
 
-  &:nth-child(3):hover,
-  &:nth-child(3):focus {
+  &:nth-of-type(3):hover,
+  &:nth-of-type(3):focus {
     transform: scale(1.1);
     background-color: #f10b0bdf;
     color: #fff;
