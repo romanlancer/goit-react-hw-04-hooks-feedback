@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { IconContext } from 'react-icons';
 import { ImNeutral, ImHappy, ImSad } from 'react-icons/im';
 import { FcPositiveDynamic } from 'react-icons/fc';
 import { BsJournalPlus } from 'react-icons/bs';
@@ -7,21 +6,15 @@ import { StatisticsList, StatisticsItem } from './Statistics.styled';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <StatisticsList>
     <StatisticsItem>
-      <IconContext.Provider value={{ color: 'green', size: 35 }}>
-        <ImHappy />
-      </IconContext.Provider>
+      <ImHappy color={'green'} size={35} />
       <span>good : {good}</span>
     </StatisticsItem>
     <StatisticsItem>
-      <IconContext.Provider value={{ color: 'gray', size: 35 }}>
-        <ImNeutral />
-      </IconContext.Provider>
+      <ImNeutral color={'gray'} size={35} />
       <span>neutral : {neutral}</span>
     </StatisticsItem>
     <StatisticsItem>
-      <IconContext.Provider value={{ color: 'red', size: 35 }}>
-        <ImSad />
-      </IconContext.Provider>
+      <ImSad color={'red'} size={35} />
       <span>bad : {bad}</span>
     </StatisticsItem>
     <StatisticsItem>
@@ -30,7 +23,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     </StatisticsItem>
     <StatisticsItem>
       <FcPositiveDynamic size={35} />
-      <span>Positive feedback : {positivePercentage}</span> %
+      <span>Positive feedback : {positivePercentage}</span>%
     </StatisticsItem>
   </StatisticsList>
 );
